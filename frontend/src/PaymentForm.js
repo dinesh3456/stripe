@@ -29,7 +29,7 @@ const PaymentForm = () => {
     }
 
     try {
-      const response = await axios.post('http://localhost:5002/create-payment-intent', {
+      const response = await axios.post('https://stripe-g79z.onrender.com/create-payment-intent', {
         amount: amount * 100,
         description,
         name,
